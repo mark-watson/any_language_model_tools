@@ -10,7 +10,7 @@ struct openai_test {
 
         let model = OpenAILanguageModel(
             apiKey: apiKey,
-            model: "gpt-4o-mini"
+            model: "gpt-5-mini"
         )
 
         let session = LanguageModelSession(model: model)
