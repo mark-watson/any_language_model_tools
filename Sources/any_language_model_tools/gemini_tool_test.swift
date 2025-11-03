@@ -17,6 +17,7 @@ struct gemini_test {
         let prompt = Prompt("What's the weather like in Tokyo?")
         let response = try await session.respond(to: prompt)
         print(response)
+        print(response.content)
     }
 }
 

@@ -15,10 +15,20 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
-            name: "gemini_test",
+            name: "gemini_tool_test",
             dependencies: [
                 .product(name: "AnyLanguageModel", package: "AnyLanguageModel")
-            ]
+            ],
+            path: "Sources/any_language_model_tools",
+            sources: ["gemini_tool_test.swift"]
+        ),
+        .executableTarget(
+            name: "openai_test",
+            dependencies: [
+                .product(name: "AnyLanguageModel", package: "AnyLanguageModel")
+            ],
+            path: "Sources/any_language_model_tools",
+            sources: ["openai_test.swift"]
         )
     ]
 )
