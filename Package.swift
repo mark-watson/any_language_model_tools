@@ -29,6 +29,22 @@ let package = Package(
             ],
             path: "Sources/any_language_model_tools",
             sources: ["openai_test.swift"]
-        )
+        ),
+        .executableTarget(
+            name: "ollama_test",
+            dependencies: [
+                .product(name: "AnyLanguageModel", package: "AnyLanguageModel")
+            ],
+            path: "Sources/any_language_model_tools",
+            sources: ["ollama_test.swift"]
+        ),
+        .executableTarget(
+            name: "ollama_cloud_test",
+            dependencies: [
+                .product(name: "AnyLanguageModel", package: "AnyLanguageModel")
+            ],
+            path: "Sources/any_language_model_tools",
+            sources: ["ollama_cloud_test.swift"]
+        ),
     ]
 )
