@@ -1,4 +1,7 @@
-# Any Language Model Tools Example
+# Any Language Model Tools Examples from my book "Artificial Intelligence Using Swift"
+
+You can read my book for free online at: https://leanpub.com/SwiftAI/read
+
 
 This package shows how to call Google's Gemini models from Swift while providing tools the model can call to accomplish tasks. It uses the [AnyLanguageModel](https://github.com/mattt/AnyLanguageModel) library and defines a simple weather tool to demonstrate tool-enabled prompting.
 
